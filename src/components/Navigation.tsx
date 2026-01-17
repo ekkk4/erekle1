@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import helmetLogo from "@/assets/helmet-logo.png";
 
 const navLinks = [
   { href: "#bio", label: "About" },
@@ -33,8 +34,8 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="font-display text-2xl tracking-wider">
-            E<span className="text-primary">B</span>
+          <a href="#" className="flex items-center">
+            <img src={helmetLogo} alt="Logo" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
@@ -43,7 +44,7 @@ const Navigation = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm tracking-wider text-white/90 hover:text-primary transition-colors drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
               >
                 {link.label}
               </a>
@@ -53,7 +54,7 @@ const Navigation = () => {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
