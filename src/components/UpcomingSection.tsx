@@ -62,10 +62,10 @@ const UpcomingSection = () => {
               {challenge.backgroundImage && (
                 <>
                   <div 
-                    className="absolute inset-0 bg-cover bg-center opacity-20"
+                    className="absolute inset-0 bg-cover bg-center opacity-40"
                     style={{ backgroundImage: `url(${challenge.backgroundImage})` }}
                   />
-                  <div className="absolute inset-0 bg-card/80" />
+                  <div className="absolute inset-0 bg-card/60" />
                 </>
               )}
               <div className="relative z-10">
