@@ -54,7 +54,7 @@ const AchievementsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className={`card-glow bg-card p-8 rounded-lg border ${
+              className={`card-glow bg-card/60 backdrop-blur-sm p-8 rounded-lg border ${
                 achievement.highlight ? "border-primary/50" : "border-border"
               }`}
             >
