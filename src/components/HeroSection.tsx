@@ -9,7 +9,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Erekle Bagashvili cycling through open terrain"
-          className="w-full h-full object-cover object-[center_60%]"
+          className="w-full h-full object-cover object-[center_60%] md:object-[center_60%] object-[70%_center]"
         />
         <div className="hero-overlay absolute inset-0" />
       </div>
@@ -22,7 +22,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <p className="text-primary font-body text-sm md:text-base tracking-[0.3em] uppercase mb-4 drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">
-            Ultracyclist • Record Breaker • Adventurer
+            Ultracyclist • Adventurer
           </p>
         </motion.div>
 
@@ -43,8 +43,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-body text-lg md:text-xl text-foreground/80 max-w-xl mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]"
         >
-          Pushing the limits of human endurance across continents.
-          One pedal stroke at a time.
+          Chasing dreams (and records).
         </motion.p>
 
         <motion.div
