@@ -30,11 +30,12 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl leading-none mb-6 drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]"
+          className="font-display text-6xl md:text-8xl lg:text-9xl leading-none mb-6"
+          style={{ textShadow: '0 4px 30px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.8)' }}
         >
           EREKLE
           <br />
-          <span className="text-gradient drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]">BAGASHVILI</span>
+          <span className="text-gradient" style={{ textShadow: '0 4px 30px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.8)' }}>BAGASHVILI</span>
         </motion.h1>
 
         <motion.p
