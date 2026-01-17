@@ -16,24 +16,11 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-left md:max-w-[50%] md:mr-auto md:ml-12 lg:ml-20">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <p 
-            className="text-primary font-body text-sm md:text-base tracking-[0.3em] uppercase mb-4"
-            style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6)' }}
-          >
-            Ultracyclist • Adventurer
-          </p>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl leading-none mb-6"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="font-display text-6xl md:text-8xl lg:text-9xl leading-none mb-4"
         >
           EREKLE
           <br />
@@ -43,10 +30,11 @@ const HeroSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="font-body text-lg md:text-xl text-foreground/80 max-w-xl mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]"
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-primary font-body text-sm md:text-base tracking-[0.3em] uppercase mb-10"
+          style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6)' }}
         >
-          Chasing dreams (and records).
+          Ultracyclist • Adventurer
         </motion.p>
 
         <motion.div
@@ -59,7 +47,7 @@ const HeroSection = () => {
             href="#achievements"
             className="px-8 py-4 bg-primary text-primary-foreground font-display text-xl tracking-wider hover:opacity-90 transition-opacity"
           >
-            VIEW ACHIEVEMENTS
+            ACHIEVEMENTS
           </a>
           <a
             href="#contact"
