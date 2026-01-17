@@ -53,7 +53,9 @@ const ContactSection = () => {
 
             <div className="flex justify-center gap-6">
               <a
-                href="#"
+                href="https://www.instagram.com/ekkk4/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 border border-border rounded-lg hover:border-primary hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
