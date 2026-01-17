@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Trophy, MapPin, Clock } from "lucide-react";
+import achievementsBg from "@/assets/achievements-bg.jpg";
 
 const achievements = [
   {
@@ -20,8 +21,18 @@ const achievements = [
 
 const AchievementsSection = () => {
   return (
-    <section id="achievements" className="py-24 md:py-32 bg-secondary/30">
-      <div className="container mx-auto px-6">
+    <section id="achievements" className="py-24 md:py-32 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={achievementsBg}
+          alt="Achievements background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
