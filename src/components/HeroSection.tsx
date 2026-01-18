@@ -9,7 +9,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Erekle Bagashvili cycling through open terrain"
-          className="w-full h-full object-cover object-[20%_center] md:object-[center_60%]"
+          className="w-full h-full object-cover object-[50%_center] md:object-[center_60%]"
         />
         <div className="hero-overlay absolute inset-0" />
       </div>
