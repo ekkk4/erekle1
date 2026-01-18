@@ -31,8 +31,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-primary font-body text-sm md:text-base tracking-[0.3em] uppercase mb-10"
-          style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6)' }}
+          className="text-white/90 font-body text-sm md:text-base tracking-[0.3em] uppercase mb-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
         >
           Ultracyclist • Adventurer
         </motion.p>
