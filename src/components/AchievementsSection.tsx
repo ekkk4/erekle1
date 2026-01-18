@@ -27,7 +27,7 @@ const AchievementsSection = () => {
         <img
           src={achievementsBg}
           alt="Achievements background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-background/85" />
       </div>
