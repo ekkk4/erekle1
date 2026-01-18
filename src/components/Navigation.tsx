@@ -70,7 +70,7 @@ const Navigation = () => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden py-6 border-t border-border"
+            className="md:hidden absolute top-20 left-0 right-0 bg-background/95 backdrop-blur-md py-6 px-6 border-t border-border"
           >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -78,7 +78,7 @@ const Navigation = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg tracking-wider text-muted-foreground hover:text-primary transition-colors"
+                  className="text-lg tracking-wider text-foreground hover:text-primary transition-colors"
                 >
                   {link.label}
                 </a>
