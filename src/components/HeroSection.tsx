@@ -9,7 +9,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Erekle Bagashvili cycling through open terrain"
-          className="w-full h-full object-cover object-[center_60%] md:object-[center_60%] object-[70%_center]"
+          className="w-full h-full object-cover object-[30%_center] md:object-[center_60%]"
         />
         <div className="hero-overlay absolute inset-0" />
       </div>
@@ -45,13 +45,13 @@ const HeroSection = () => {
         >
           <a
             href="#achievements"
-            className="px-8 py-4 bg-primary text-primary-foreground font-display text-xl tracking-wider hover:opacity-90 transition-opacity"
+            className="px-5 py-3 bg-primary text-primary-foreground font-display text-base md:text-xl tracking-wider hover:opacity-90 transition-opacity"
           >
             ACHIEVEMENTS
           </a>
           <a
             href="#contact"
-            className="px-8 py-4 border border-foreground/30 text-foreground font-display text-xl tracking-wider hover:border-primary hover:text-primary transition-colors"
+            className="px-5 py-3 border border-foreground/30 text-foreground font-display text-base md:text-xl tracking-wider hover:border-primary hover:text-primary transition-colors"
           >
             GET IN TOUCH
           </a>
