@@ -49,6 +49,12 @@ const HeroSection = () => {
             ACHIEVEMENTS
           </a>
           <a
+            href="#upcoming"
+            className="px-3 py-2 md:px-5 md:py-3 bg-primary text-primary-foreground font-display text-sm md:text-xl tracking-wider hover:opacity-90 transition-opacity w-fit"
+          >
+            UPCOMING CHALLENGES
+          </a>
+          <a
             href="#contact"
             className="px-3 py-2 md:px-5 md:py-3 border border-foreground/30 text-foreground font-display text-sm md:text-xl tracking-wider hover:border-primary hover:text-primary transition-colors w-fit"
           >
