@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Instagram, Linkedin } from "lucide-react";
+import { Mail, Instagram } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -26,10 +26,8 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-12"
           >
-            <p className="text-lg text-secondary-foreground leading-relaxed max-w-2xl mx-auto">
-              I'm always open to collaborating with brands and organizations that share 
-              my passion for adventure, endurance, and pushing boundaries. Whether you're 
-              interested in sponsorship, partnerships, or media inquiries—let's connect.
+            <p className="text-xl text-foreground font-medium">
+              Partnerships@teamerekle.com
             </p>
           </motion.div>
 
@@ -44,11 +42,11 @@ const ContactSection = () => {
             <h3 className="font-display text-3xl mb-6">GET IN TOUCH</h3>
             
             <a
-              href="mailto:contact@ereklebagashvili.com"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-display text-xl tracking-wider hover:opacity-90 transition-opacity mb-8"
+              href="mailto:Partnerships@teamerekle.com"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-display text-lg tracking-wider hover:opacity-90 transition-opacity mb-8"
             >
               <Mail className="w-5 h-5" />
-              SEND EMAIL
+              Send us an email at Partnerships@teamerekle.com
             </a>
 
             <div className="flex justify-center gap-6">
@@ -62,39 +60,30 @@ const ContactSection = () => {
                 <Instagram className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://strava.app.link/1YWwMEVk3Zb"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 border border-border rounded-lg hover:border-primary hover:text-primary transition-colors"
-                aria-label="LinkedIn"
+                aria-label="Strava"
               >
-                <Linkedin className="w-6 h-6" />
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+                </svg>
+              </a>
+              <a
+                href="https://www.komoot.com/user/4469421429290"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 border border-border rounded-lg hover:border-primary hover:text-primary transition-colors"
+                aria-label="Komoot"
+              >
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 18.667a6.667 6.667 0 1 1 0-13.334 6.667 6.667 0 0 1 0 13.334zm0-10.667a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
+                </svg>
               </a>
             </div>
           </motion.div>
 
-          {/* Partnership Interests */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-12 text-center"
-          >
-            <p className="text-muted-foreground text-sm tracking-wider mb-4">
-              OPEN TO PARTNERSHIPS IN
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {["Cycling Equipment", "Nutrition", "Apparel", "Tech & Gadgets", "Travel", "Media"].map(
-                (category, index) => (
-                  <span
-                    key={index}
-                    className="px-4 py-2 bg-muted text-muted-foreground text-sm rounded-full"
-                  >
-                    {category}
-                  </span>
-                )
-              )}
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>

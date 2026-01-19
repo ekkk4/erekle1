@@ -21,6 +21,7 @@ const achievements = [
     icon: MapPin,
     highlight: false,
     flagBg: euFlag,
+    link: "https://www.marketer.ge/velomogzauri-romelits-ar-cherdeba/",
   },
 ];
 
