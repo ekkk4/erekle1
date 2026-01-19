@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-cycling.jpg";
-
+import azerbaijanFlag from "@/assets/azerbaijan-flag.png";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-32 md:pt-40">
@@ -50,9 +50,14 @@ const HeroSection = () => {
           </a>
           <a
             href="#upcoming"
-            className="px-3 py-2 md:px-5 md:py-3 bg-primary text-primary-foreground font-display text-sm md:text-xl tracking-wider hover:opacity-90 transition-opacity w-fit"
+            className="px-3 py-2 md:px-5 md:py-3 bg-primary text-primary-foreground font-display text-sm md:text-xl tracking-wider hover:opacity-90 transition-opacity w-fit relative overflow-hidden"
           >
-            UPCOMING CHALLENGES
+            <img
+              src={azerbaijanFlag}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover opacity-50"
+            />
+            <span className="relative z-10">UPCOMING CHALLENGES</span>
           </a>
           <a
             href="#contact"

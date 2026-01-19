@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { Trophy, MapPin } from "lucide-react";
-import { ExternalLink } from "lucide-react";
+import { Trophy, MapPin, ExternalLink } from "lucide-react";
 import achievementsBg from "@/assets/achievements-bg.jpg";
 import georgiaFlag from "@/assets/georgia-flag.png";
+import euFlag from "@/assets/eu-flag.png";
 
 const achievements = [
   {
@@ -20,6 +20,7 @@ const achievements = [
     description: "Rode from Portugal to Georgia on an epic, self-powered journey — a long-haul ride across 10 countries and 5100 km, built on curiosity, grit, and the love of the open road.",
     icon: MapPin,
     highlight: false,
+    flagBg: euFlag,
   },
 ];
 
@@ -32,7 +33,7 @@ const AchievementsSection = () => {
           src={achievementsBg}
           alt="Achievements background"
           className="w-full h-full object-cover"
-          style={{ objectPosition: "60% center" }}
+          style={{ objectPosition: "80% center" }}
         />
         <div className="absolute inset-0 bg-background/85" />
       </div>

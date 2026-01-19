@@ -1,30 +1,22 @@
 import { motion } from "framer-motion";
-import { Target, Mountain, Globe } from "lucide-react";
+import { Target, Globe } from "lucide-react";
 import azerbaijanFlag from "@/assets/azerbaijan-flag.png";
 
 const upcomingChallenges = [
   {
     title: "Azerbaijan Crossing",
     subtitle: "World Record Attempt",
-    description: "Aiming to set a new world record crossing Azerbaijan, tackling the diverse terrain from the Caspian coast to the Greater Caucasus.",
+    description: "An upcoming world record attempt across Azerbaijan west to east— riding from Red Bridge (Georgian border) to Baku, covering 550 km in one push. Scheduled for Spring 2026.",
     icon: Target,
-    status: "2025",
+    status: "April, 2026",
     backgroundImage: azerbaijanFlag,
   },
   {
-    title: "Turkey Crossing",
-    subtitle: "Ultra Challenge",
-    description: "An ambitious east-to-west traverse of Turkey, one of the most demanding ultra-distance routes in the world.",
-    icon: Mountain,
-    status: "2025",
-    backgroundImage: null,
-  },
-  {
     title: "Transcontinental Race",
-    subtitle: "TCR 2026",
-    description: "The ultimate test of self-supported ultra-distance racing. From Belgium to Turkey, 4,000+ km of pure endurance.",
+    subtitle: "Ultracycling race",
+    description: "The definitive self-supported bike race across Europe. 5000km from Norway to Greece.",
     icon: Globe,
-    status: "2026",
+    status: "July 19, 2026",
     backgroundImage: null,
   },
 ];
@@ -49,7 +41,7 @@ const UpcomingSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {upcomingChallenges.map((challenge, index) => (
             <motion.div
               key={index}
