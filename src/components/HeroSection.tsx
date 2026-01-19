@@ -55,7 +55,7 @@ const HeroSection = () => {
             <img
               src={azerbaijanFlag}
               alt=""
-              className="absolute inset-0 w-full h-full object-cover opacity-50"
+              className="absolute inset-0 w-full h-full object-contain object-center opacity-60"
             />
             <span className="relative z-10">UPCOMING CHALLENGES</span>
           </a>

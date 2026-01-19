@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Target, Globe } from "lucide-react";
 import azerbaijanFlag from "@/assets/azerbaijan-flag.png";
+import tcrLogo from "@/assets/tcr-logo.png";
 
 const upcomingChallenges = [
   {
@@ -17,7 +18,7 @@ const upcomingChallenges = [
     description: "The definitive self-supported bike race across Europe. 5000km from Norway to Greece.",
     icon: Globe,
     status: "July 19, 2026",
-    backgroundImage: null,
+    backgroundImage: tcrLogo,
   },
 ];
 
