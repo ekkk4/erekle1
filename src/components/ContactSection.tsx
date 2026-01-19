@@ -43,10 +43,10 @@ const ContactSection = () => {
             
             <a
               href="mailto:Partnerships@teamerekle.com"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-display text-lg tracking-wider hover:opacity-90 transition-opacity mb-8"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-display text-xl tracking-wider hover:opacity-90 transition-opacity mb-8"
             >
               <Mail className="w-5 h-5" />
-              Send us an email at Partnerships@teamerekle.com
+              Send us an email
             </a>
 
             <div className="flex justify-center gap-6">
